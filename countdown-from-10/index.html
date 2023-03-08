@@ -4,41 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Countdown</title>
-    <style>
-        body {
-            background-color: black;
-        }
-
-        .countdown {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            font-size: 10em;
-            color: white;
-            background-color: white;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="countdown"></div>
+    <div>
+        <p class="countdown"></p>
+        <p class="text">sekunder</p>
+    </div>
 
-    <script>
-        let count = 10;
-        let countdownEl = document.querySelector('.countdown');
-
-        let countdownInterval = setInterval(function () {
-            if (count > 0) {
-                count--;
-                countdownEl.innerHTML = count;
-            } else {
-                clearInterval(countdownInterval);
-            }
-        }, 1000);
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
