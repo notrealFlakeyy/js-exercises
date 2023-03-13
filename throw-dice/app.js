@@ -5,17 +5,17 @@ let diceRoll = Math.floor(Math.random() * 6) + 1;
 let diceImage = document.createElement("img");
 
 if (diceRoll == 1) {
-    diceImage.src = "./images/1.png"
+    diceImage.src = "./images/dice1.png"
 } else if (diceRoll == 2) {
-    diceImage.src = "./images/2.png"
+    diceImage.src = "./images/dice2.png"
 } else if (diceRoll.valueOf == 3) {
-    diceImage.src = "./images/3.png"
+    diceImage.src = "./images/dice3.png"
 } else if (diceRoll.valueOf == 4) {
-    diceImage.src = "./images/4.png"
+    diceImage.src = "./images/dice4.png"
 } else if (diceRoll.valueOf == 5) {
-    diceImage.src = "./images/5.png"
+    diceImage.src = "./images/dice5.png"
 } else if (diceRoll.valueOf == 6)
-    diceImage.src = "./images/6.png"
+    diceImage.src = "./images/dice6.png"
 
 
 // Add the image element to the dice div
