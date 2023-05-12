@@ -2,23 +2,23 @@
 let diceRoll = Math.floor(Math.random() * 6) + 1;
 
 // Create a new image element
-let diceImage = document.createElement("img");
+let diceResult = document.createElement("p");
 
 if (diceRoll == 1) {
-    diceImage.src = "./images/dice1.png"
+    diceResult.innerText = "1"
 } else if (diceRoll == 2) {
-    diceImage.src = "./images/dice2.png"
-} else if (diceRoll.valueOf == 3) {
-    diceImage.src = "./images/dice3.png"
-} else if (diceRoll.valueOf == 4) {
-    diceImage.src = "./images/dice4.png"
-} else if (diceRoll.valueOf == 5) {
-    diceImage.src = "./images/dice5.png"
-} else if (diceRoll.valueOf == 6)
-    diceImage.src = "./images/dice6.png"
+    diceResult.innerText = "2"
+} else if (diceRoll == 3) {
+    diceResult.innerText = "3"
+} else if (diceRoll == 4) {
+    diceResult.innerText = "4"
+} else if (diceRoll == 5) {
+    diceResult.innerText = "5"
+} else if (diceRoll == 6)
+    diceResult.innerText = "6"
 
 
 // Add the image element to the dice div
-document.getElementById("dice").appendChild(diceImage);
+document.getElementById("dice").appendChild(diceResult);
 
 console.log(diceRoll);
